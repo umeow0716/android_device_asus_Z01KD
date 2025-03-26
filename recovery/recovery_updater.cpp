@@ -199,6 +199,6 @@ Value * VerifyModemFn(const char *name, State *state, const std::vector<std::uni
     return StringValue(strdup(ret ? "1" : "0"));
 }
 
-void Register_librecovery_updater_X01BD() {
-    RegisterFunction("X01BD.verify_modem", VerifyModemFn);
+void Register_librecovery_updater_Z01KD() {
+    RegisterFunction("Z01KD.verify_modem", VerifyModemFn);
 }

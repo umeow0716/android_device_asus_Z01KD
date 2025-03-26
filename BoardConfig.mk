@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-DEVICE_PATH := device/asus/X01BD
+DEVICE_PATH := device/asus/Z01KD
 
 BOARD_VENDOR := asus
 
@@ -39,12 +39,12 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
-TARGET_KERNEL_CONFIG := X01BD_defconfig
+TARGET_KERNEL_CONFIG := Z01KD_defconfig
 TARGET_KERNEL_VERSION := 4.4
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := ASUS_X01BD,X01BD,X01BDA
+TARGET_OTA_ASSERT_DEVICE := ASUS_Z01KD,Z01KD
 
 # Audio
 AUDIO_FEATURE_ENABLED_3D_AUDIO := false
@@ -220,7 +220,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_X01BD
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_Z01KD
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
@@ -263,4 +263,4 @@ WIFI_DRIVER_STATE_ON := 1
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # inherit from the proprietary version
--include vendor/asus/X01BD/BoardConfigVendor.mk
+-include vendor/asus/Z01KD/BoardConfigVendor.mk

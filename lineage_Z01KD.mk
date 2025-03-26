@@ -22,14 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from X01BD device
+# Inherit from Z01KD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X01BD
-PRODUCT_DEVICE := X01BD
+PRODUCT_NAME := lineage_Z01KD
+PRODUCT_DEVICE := Z01KD
 PRODUCT_BRAND := asus
-PRODUCT_MODEL := ASUS_X01BD
+PRODUCT_MODEL := ASUS_Z01KD
 PRODUCT_MANUFACTURER := asus
 TARGET_VENDOR := asus
 
@@ -41,10 +41,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=ASUS_X01BD \
-    PRODUCT_NAME=WW_X01BD \
+    TARGET_DEVICE=ASUS_Z01KD \
+    PRODUCT_NAME=WW_Z01KD \
     PRIVATE_BUILD_DESC="sdm660_64-user 9 PKQ1 1287 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "asus/WW_X01BD/ASUS_X01BD_1:9/PKQ1/16.2017.1910.071-20190920:user/release-keys"
+BUILD_FINGERPRINT := "asus/WW_Z01KD/ASUS_Z01KD_1:9/PKQ1/16.2017.1910.071-20190920:user/release-keys"
 

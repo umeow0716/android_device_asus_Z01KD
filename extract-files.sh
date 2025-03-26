@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE=X01BD
+DEVICE=Z01KD
 VENDOR=asus
 
 # Load extract_utils and do some sanity checks

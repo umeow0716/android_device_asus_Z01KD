@@ -222,7 +222,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.x01bd
+    android.hardware.light@2.0-service.z01kd
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -421,7 +421,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_X01BD
+    librecovery_updater_Z01KD
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -489,4 +489,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-$(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
+$(call inherit-product, vendor/asus/Z01KD/Z01KD-vendor.mk)
