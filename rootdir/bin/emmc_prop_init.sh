@@ -1,3 +1,4 @@
+#!/vendor/bin/sh
 LOG_TAG="SetEmmcInfo"
 logi ()
 {
